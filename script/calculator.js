@@ -20,3 +20,9 @@ const multiply = ((numb1, num2) => {
 });
 
 console.log("The result is:", multiply(4, 4));
+
+const divide = ((a, b) => {
+    return a / b;
+});
+
+console.log("The result is:", divide(50, 5));
