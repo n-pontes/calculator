@@ -1,3 +1,5 @@
+// Addition function
+
 const add = ((a, b) => {
     return a + b;
 });
