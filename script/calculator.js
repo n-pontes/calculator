@@ -2,6 +2,11 @@
 
 let operator = ['+', '-', '/', '*'];
 
+// Operator numbers
+
+let num1 = 0;
+let num2 = 0;
+
 // Addition function
 
 const add = ((a, b) => {
@@ -34,3 +39,18 @@ const divide = ((a, b) => {
 });
 
 console.log("The result is:", divide(50, 5));
+
+const operate = ((operator, num1, num2) => {
+    switch (operator) {
+        case '+':
+            return add(num1, num2);
+        case '-':
+            return sub(num1, num2);
+        case '*':
+            return multiply(num1, num2);
+        case '/':
+            return divide(num1, num2);
+        default:
+            return "Invalid operator";
+    }
+});
