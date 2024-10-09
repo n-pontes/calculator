@@ -1,3 +1,7 @@
+// Operator variable
+
+let operator = ['+', '-', '/', '*'];
+
 // Addition function
 
 const add = ((a, b) => {
