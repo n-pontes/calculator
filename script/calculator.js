@@ -17,6 +17,12 @@ let num2 = null;
 // Result
 let result = null;
 
+// Displays the number clicked
+const displayValue = () => {
+    const outputText = (num1 !== null ? num1 : '') + (operator !== null ? ' ' + operator : '') + (num2 !== null ? ' ' + num2 : '');
+    displayArea.value = outputText; // Correct for input
+};
+
 // Addition function
 const add = (num1, num2) => num1 + num2;
 
