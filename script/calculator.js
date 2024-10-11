@@ -3,11 +3,14 @@ let displayValue = 0;
 let displayArea = document.querySelector('display');
 
 // Operator variable
-let operator = ['+', '-', '/', '*'];
+let operator = null;
 
 // Operator numbers
-let num1 = 0;
-let num2 = 0;
+let num1 = null;
+let num2 = null;
+
+// Result
+let result = null;
 
 // Addition function
 const add = (num1, num2) => num1 + num2;
