@@ -18,8 +18,10 @@ body{
 #display{
     width: 100%;
     padding: 20px;
-    font-size: 5rem;
-    text-align: left;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 10px;
     border: none;
     background-color: hsl(0, 0%, 20%);
     color: white;
