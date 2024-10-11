@@ -2,7 +2,10 @@
 const calcBtn = document.querySelectorAll('.btn');
 
 // Create variable to hold display value, create variable of display area and populate
-const displayArea = document.querySelector('display');
+const displayArea = document.querySelector('#display');
+
+// Stores the current value that is being displayed
+let displayValue = '';
 
 // Operator variable
 let operator = null;
@@ -30,18 +33,25 @@ console.log("The result is:", multiply(4, 4));
 const divide = (num1, num2) => num1 / num2;
 console.log("The result is:", divide(50, 5));
 
-// Operate function
+// Operate function - determines how calculator works
 const operate = ((operator, num1, num2) => {
-    switch (operator) {
+    let result;
+
+    switch ((operator, num1, num2)) {
         case '+':
-            return add(num1, num2);
+            result = add(num1, num2);
+            break;
         case '-':
-            return sub(num1, num2);
+            result = sub(num1, num2);
+            break;
         case '*':
-            return multiply(num1, num2);
+            result = multiply(num1, num2);
+            break;
         case '/':
-            return divide(num1, num2);
+            result = divide(num1, num2);
+            break;
         default:
             return "Invalid operator";
     }
+    return result;
 });
