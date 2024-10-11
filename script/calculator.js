@@ -1,3 +1,7 @@
+// CReate variable to hold display value, create variable of display area and populate
+let displayValue = 0;
+let displayArea = document.querySelector('result-display');
+
 // Operator variable
 let operator = ['+', '-', '/', '*'];
 
