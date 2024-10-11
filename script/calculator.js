@@ -21,6 +21,7 @@ console.log("The result is:", multiply(4, 4));
 const divide = (num1, num2) => num1 / num2;
 console.log("The result is:", divide(50, 5));
 
+// Operate function
 const operate = ((operator, num1, num2) => {
     switch (operator) {
         case '+':
