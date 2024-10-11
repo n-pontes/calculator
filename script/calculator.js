@@ -17,6 +17,17 @@ let num2 = null;
 // Result
 let result = null;
 
+// 
+calcBtn.forEach((btn) => {
+    btn.addEventListener("click", function () {
+        // Logic for what happens when the button is clicked
+        const buttonValue = btn.textContent; // Gets the buttons value
+
+        // Updates the display with this value
+        displayArea.value += buttonValue;
+    });
+});
+
 // Addition function
 const add = (num1, num2) => num1 + num2;
 console.log("The result is:", add(1, 6));
@@ -37,7 +48,7 @@ console.log("The result is:", divide(50, 5));
 const operate = ((operator, num1, num2) => {
     let result;
 
-    switch ((operator, num1, num2)) {
+    switch (operator) {
         case '+':
             result = add(num1, num2);
             break;
