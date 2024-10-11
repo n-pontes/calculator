@@ -19,19 +19,15 @@ let result = null;
 
 // Addition function
 const add = (num1, num2) => num1 + num2;
-console.log("The result is:", add(1, 6));
 
 // Subtraction function
 const sub = (num1, num2) => num1 - num2;
-console.log("The result is:", sub(8, 4));
 
 // Multiply function
 const multiply = (numb1, num2) => numb1 * num2;
-console.log("The result is:", multiply(4, 4));
 
 // Division function
 const divide = (num1, num2) => num1 / num2;
-console.log("The result is:", divide(50, 5));
 
 // Operate function - determines how calculator
 const operate = ((operator, num1, num2) => {
