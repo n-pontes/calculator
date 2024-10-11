@@ -38,7 +38,7 @@ const divide = (num1, num2) => {
 const operate = ((operator, num1, num2) => {
     let result;
 
-    switch ((operator, num1, num2)) {
+    switch (operator) {
         case '+':
             result = add(num1, num2);
             break;
