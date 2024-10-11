@@ -1,4 +1,5 @@
-
+// Selects all buttons
+const calcBtn = document.querySelectorAll('.btn');
 
 // Create variable to hold display value, create variable of display area and populate
 const displayArea = document.querySelector('display');
