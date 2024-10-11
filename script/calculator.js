@@ -23,6 +23,44 @@ const displayValue = () => {
     displayArea.value = outputText; // Correct for input
 };
 
+// Detects which button was clicked and assigns it to a variable
+const operateBtn = (e) => {
+    const btn = e.target.textContent;
+    if (btn >= '0' && btn <= '9') {
+        if (num1 === null) {
+            num1 = parseInt(btn);
+        } else if (operator === null) {
+            num1 = num1 * 10 + parseInt(btn);
+        } else if (num2 === null) {
+            num2 = parseInt(btn);
+        } else {
+            num2 = num2 * 10 + parseInt(btn);
+        }
+
+        displayValue();
+    } else if (btn === 'C') {
+        num1 = null;
+        num2 = null;
+        operator = null;
+        displayArea.value = ''; // Correct for input
+    } else if (btn === '=') {
+        if (num1 !== null && num2 !== null && operator !== null) {
+            result = operate(operator, num1, num2);
+            displayArea.value = result; // Show result in display
+            num1 = result; // Prepare for next calculation
+            num2 = null;
+            operator = null;
+        }
+    } else {
+        operator = btn;
+        displayValue();
+    }
+};
+
+calcBtn.forEach((btn) => {
+    btn.addEventListener("click", operateBtn);
+});
+
 // Addition function
 const add = (num1, num2) => num1 + num2;
 
