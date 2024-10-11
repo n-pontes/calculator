@@ -3,9 +3,7 @@ const calcBtn = document.querySelectorAll('.btn');
 
 // Create variable to hold display value, create variable of display area and populate
 const displayArea = document.querySelector('#display');
-
-// Stores the current value that is being displayed
-let displayValue = '';
+displayArea.innerHTML = "";
 
 // Operator variable
 let operator = null;
@@ -17,16 +15,11 @@ let num2 = null;
 // Result
 let result = null;
 
-// 
-calcBtn.forEach((btn) => {
-    btn.addEventListener("click", function () {
-        // Logic for what happens when the button is clicked
-        const buttonValue = btn.textContent; // Gets the buttons value
-
-        // Updates the display with this value
-        displayArea.value += buttonValue;
-    });
-});
+//display the number clicked
+const displayValue = () => {
+    const outputText = (num1 !== null ? num1 : '') + (operator !== null ? ' ' + operator : '') + (num2 !== null ? ' ' + num2 : '');
+    outputNum.innerText = outputText;
+};
 
 // Addition function
 const add = (num1, num2) => num1 + num2;
