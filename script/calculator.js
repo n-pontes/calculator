@@ -26,8 +26,13 @@ const sub = (num1, num2) => num1 - num2;
 // Multiply function
 const multiply = (numb1, num2) => numb1 * num2;
 
-// Division function
-const divide = (num1, num2) => num1 / num2;
+// Division function with zero check
+const divide = (num1, num2) => {
+    if (num2 === 0) {
+        return "Cannot divide by zero";
+    }
+    return num1 / num2;
+};
 
 // Operate function - determines how calculator
 const operate = ((operator, num1, num2) => {
