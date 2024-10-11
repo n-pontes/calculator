@@ -1,6 +1,7 @@
-// CReate variable to hold display value, create variable of display area and populate
-let displayValue = 0;
-let displayArea = document.querySelector('display');
+
+
+// Create variable to hold display value, create variable of display area and populate
+const displayArea = document.querySelector('display');
 
 // Operator variable
 let operator = null;
