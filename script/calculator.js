@@ -5,7 +5,7 @@ const calcBtn = document.querySelectorAll('.btn, .operator-btn');
 const displayArea = document.querySelector('#display');
 
 // Stores the current value that is being displayed
-let displayValue = '';
+displayArea.value = ''; // Use value instead of innerHTML for input
 
 // Operator variable
 let operator = null;
