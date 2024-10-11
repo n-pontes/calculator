@@ -3,7 +3,9 @@ const calcBtn = document.querySelectorAll('.btn');
 
 // Create variable to hold display value, create variable of display area and populate
 const displayArea = document.querySelector('#display');
-displayArea.innerHTML = "";
+
+// Stores the current value that is being displayed
+let displayValue = '';
 
 // Operator variable
 let operator = null;
@@ -14,12 +16,6 @@ let num2 = null;
 
 // Result
 let result = null;
-
-//display the number clicked
-const displayValue = () => {
-    const outputText = (num1 !== null ? num1 : '') + (operator !== null ? ' ' + operator : '') + (num2 !== null ? ' ' + num2 : '');
-    outputNum.innerText = outputText;
-};
 
 // Addition function
 const add = (num1, num2) => num1 + num2;
@@ -37,11 +33,11 @@ console.log("The result is:", multiply(4, 4));
 const divide = (num1, num2) => num1 / num2;
 console.log("The result is:", divide(50, 5));
 
-// Operate function - determines how calculator works
+// Operate function - determines how calculator
 const operate = ((operator, num1, num2) => {
     let result;
 
-    switch (operator) {
+    switch ((operator, num1, num2)) {
         case '+':
             result = add(num1, num2);
             break;
