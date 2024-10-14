@@ -69,7 +69,7 @@ const operateBtn = (e) => {
             num2 = Math.sqrt(num2);
             displayArea.value = num2;
         }
-    } else {
+    }else {
         operator = btn;
         displayValue();
     }
