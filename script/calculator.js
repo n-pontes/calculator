@@ -69,7 +69,12 @@ const operateBtn = (e) => {
             num2 = Math.sqrt(num2);
             displayArea.value = num2;
         }
-    }else {
+    } else if (btn === 'x²') {
+        if (operator === null && num1 !== null) {
+            num1 = Math.pow(num1, 2); // Raise num1 to the power of 2 (square it)
+            displayArea.value = num1; // Update the display with the result
+        }
+    } else {
         operator = btn;
         displayValue();
     }
