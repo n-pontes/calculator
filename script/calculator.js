@@ -74,6 +74,16 @@ const operateBtn = (e) => {
             num1 = Math.pow(num1, 2); // Raise num1 to the power of 2 (square it)
             displayArea.value = num1; // Update the display with the result
         }
+    } else if (btn === '%') {
+        console.log('Percentage button pressed');
+        if (operator === null && num1 !== null) {
+            // Convert num1 to a percentage
+            num1 = num1 / 100;
+        } else if (operator !== null && num2 !== null) {
+            // Apply percentage to num2 based on the last operation
+            num2 = (num2 / 100) * (num1 !== null ? num1 : 1); // Calculate percent of num2 based on num1 or assume 1
+        }
+        displayValue(); // Update the display to show the new value
     } else {
         operator = btn;
         displayValue();
