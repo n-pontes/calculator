@@ -59,6 +59,16 @@ const operateBtn = (e) => {
             num1 = Math.floor(num1 / 10); // Remove last digit from num1
         }
         displayArea.value = displayArea.value.slice(0, -1); // Update display
+    } else if (btn === '√') {
+        // Check if operator is null, apply square root to num1
+        if (operator === null && num1 !== null) {
+            num1 = Math.sqrt(num1); // Calculate square root of num1
+            displayArea.value = num1;
+        } else if (num2 !== null) {
+            // If num2 is present, apply square root to num2
+            num2 = Math.sqrt(num2);
+            displayArea.value = num2;
+        }
     } else {
         operator = btn;
         displayValue();
@@ -100,7 +110,7 @@ const operate = ((operator, num1, num2) => {
         case '*':
             result = multiply(num1, num2);
             break;
-        case '÷':
+        case '/':
             result = divide(num1, num2);
             break;
         default:
