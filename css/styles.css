@@ -19,7 +19,7 @@ body {
 
 #display {
     width: 100%;
-    height: 80px; /* Increased height for better visibility */
+    height: 150px; /* Increased height for better visibility */
     font-size: 3.5rem; /* Adjusted font size */
     text-align: right; /* Align text to the right */
     margin-bottom: 20px; /* Space between display and buttons */
