@@ -115,7 +115,7 @@ const operate = ((operator, num1, num2) => {
         case '*':
             result = multiply(num1, num2);
             break;
-        case '/':
+        case '÷':
             result = divide(num1, num2);
             break;
         default:
