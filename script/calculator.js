@@ -38,7 +38,7 @@ const operateBtn = (e) => {
         }
 
         displayValue();
-    } else if (btn === 'C') {
+    } else if (btn === 'AC') {
         num1 = null;
         num2 = null;
         operator = null;
@@ -51,6 +51,14 @@ const operateBtn = (e) => {
             num2 = null;
             operator = null;
         }
+    } else if (btn === 'DEL') {
+        // Check if num2 exists, otherwise modify num1
+        if (num2 !== null) {
+            num2 = Math.floor(num2 / 10); // Remove last digit from num2
+        } else if (operator === null && num1 !== null) {
+            num1 = Math.floor(num1 / 10); // Remove last digit from num1
+        }
+        displayArea.value = displayArea.value.slice(0, -1); // Update display
     } else {
         operator = btn;
         displayValue();
