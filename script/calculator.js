@@ -123,3 +123,22 @@ const operate = ((operator, num1, num2) => {
     }
     return result;
 });
+
+// Add keyboard support
+document.addEventListener('keydown', (event) => {
+    const key = event.key;
+
+    // Map the keys to their respective button actions
+    if ('0123456789'.includes(key)) {
+        operateBtn({ target: { textContent: key } }); // Call the operateBtn with the pressed number
+    } else if (key === 'Enter' || key === '=') {
+        operateBtn({ target: { textContent: '=' } }); // Simulate pressing '='
+    } else if (key === 'Backspace') {
+        operateBtn({ target: { textContent: 'DEL' } }); // Simulate pressing 'DEL'
+    } else if (key === 'Escape') {
+        operateBtn({ target: { textContent: 'AC' } }); // Simulate pressing 'AC'
+    } else if (key === '+' || key === '-' || key === '*' || key === '/') {
+        // Handle multiplication with '*', but since your buttons use 'x', replace it accordingly
+        operateBtn({ target: { textContent: key === '*' ? 'x' : key } }); // Simulate pressing the operator
+    }
+});
