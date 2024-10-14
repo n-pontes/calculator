@@ -15,17 +15,26 @@ body{
     overflow: hidden;
 }
 
-#display{
+#display {
     width: 100%;
-    padding: 20px;
-    height: 50px;
-    font-size: 4rem;
-    text-align: left;
-    margin-bottom: 10px;
+    height: 80px; /* Increased height for better visibility */
+    font-size: 3.5rem; /* Adjusted font size */
+    text-align: right; /* Align text to the right */
+    margin-bottom: 20px; /* Space between display and buttons */
     border: none;
-    background-color: hsl(0, 0%, 20%);
-    color: white;
+    background-color: #1e1e1e; /* Dark background */
+    color: #ffffff; /* White text for contrast */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    padding: 15px; /* Padding for better spacing */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    overflow: hidden; /* Prevent overflow of content */
+    white-space: nowrap; /* Prevent text from wrapping */
+    text-overflow: ellipsis; /* Handle text overflow */
+    padding-right: 20px; /* Add padding to the right */
+    /* Ensure that the input doesn't clip */
+    box-sizing: border-box; /* Ensure padding is included in total width */
 }
+
 
 #keys{
     display: grid;
