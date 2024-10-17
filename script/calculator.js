@@ -69,6 +69,16 @@ const operateBtn = (e) => {
             num2 = Math.sqrt(num2);
             displayArea.value = num2;
         }
+    } else if (btn === '+/-') {
+        if (operator === null && num1 !== null) {
+            // If no operator is chosen yet, toggle the sign of num1
+            num1 *= -1;
+            displayArea.value = num1; // Update the display with the new value of num1
+        } else if (operator !== null && num2 !== null) {
+            // If an operator is chosen and num2 is being modified, toggle the sign of num2
+            num2 *= -1;
+            displayArea.value = num2; // Update the display with the new value of num2
+        }
     } else if (btn === 'x²') {
         if (operator === null && num1 !== null) {
             num1 = Math.pow(num1, 2); // Raise num1 to the power of 2 (square it)
