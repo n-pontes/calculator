@@ -30,7 +30,6 @@ body {
     text-align: right;
     margin: 15px; /* Add margin for spacing */
     font-family: 'myCalculator';
-    font-weight: bold;
     border: 2px solid #cccccc; /* Light gray border */
     background-color: #ffffff; /* White background */
     color: #000000; /* Black text for contrast */
@@ -44,10 +43,9 @@ body {
     box-sizing: border-box;
 }
 
-
 #keys {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 15px; /* Increased gap for modern spacing */
     padding: 15px; /* Reduced padding for better alignment */
 }
