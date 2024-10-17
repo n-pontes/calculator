@@ -23,6 +23,15 @@ body {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
+#calculatorName {
+    text-align: center; /* Center the text */
+    color: #ffffff; /* Light color for modern look */
+    font-size: 1.5rem; /* Adjust size as needed */
+    margin: 10px 0; /* Add some spacing above and below */
+    font-weight: bold; /* Make it bold */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Optional: adds a subtle shadow for depth */
+}
+
 #display {
     width: calc(100% - 30px); /* Reduce width for margins */
     height: 150px;
