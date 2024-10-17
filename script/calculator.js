@@ -148,7 +148,6 @@ document.addEventListener('keydown', (event) => {
     } else if (key === 'Escape') {
         operateBtn({ target: { textContent: 'AC' } }); // Simulate pressing 'AC'
     } else if (key === '+' || key === '-' || key === '*' || key === '/') {
-        // Handle multiplication with '*', but since your buttons use 'x', replace it accordingly
-        operateBtn({ target: { textContent: key === '*' ? 'x' : key } }); // Simulate pressing the operator
+        operateBtn({ target: { textContent: '*' } }); // Simulate pressing '*' 
     }
 });
