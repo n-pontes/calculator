@@ -19,7 +19,7 @@ let result = null;
 
 // Displays the number clicked
 const displayValue = () => {
-    const outputText = (num1 !== null ? num1 : '') + (operator !== null ? ' ' + operator : '') + (num2 !== null ? ' ' + num2 : '');
+    const outputText = (num1 !== null ? num1 : '') + (operator !== null ? '' + operator : '') + (num2 !== null ? '' + num2 : '');
     displayArea.value = outputText; // Correct for input
 };
 
