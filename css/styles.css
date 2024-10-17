@@ -24,26 +24,26 @@ body {
 }
 
 #display {
-    width: 100%;
-    height: 150px; /* Increased height for better visibility */
-    font-size: 4.5rem; /* Adjusted font size */
-    text-align: right; /* Align text to the right */
-    margin-bottom: 20px; /* Space between display and buttons */
+    width: calc(100% - 30px); /* Reduce width for margins */
+    height: 150px;
+    font-size: 4.5rem;
+    text-align: right;
+    margin: 15px; /* Add margin for spacing */
     font-family: 'myCalculator';
     font-weight: bold;
-    border: none;
-    background-color: #1e1e1e; /* Dark background */
-    color: #ffffff; /* White text for contrast */
-    border-radius: 10px; /* Rounded corners for a modern look */
-    padding: 15px; /* Padding for better spacing */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    overflow: hidden; /* Prevent overflow of content */
-    white-space: nowrap; /* Prevent text from wrapping */
-    text-overflow: ellipsis; /* Handle text overflow */
-    padding-right: 20px; /* Add padding to the right */
-    /* Ensure that the input doesn't clip */
-    box-sizing: border-box; /* Ensure padding is included in total width */
+    border: 2px solid #cccccc; /* Light gray border */
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text for contrast */
+    border-radius: 10px; /* Optional: keep rounded corners */
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-right: 20px;
+    box-sizing: border-box;
 }
+
 
 #keys {
     display: grid;
