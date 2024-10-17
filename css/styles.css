@@ -64,6 +64,10 @@ button {
     box-sizing: border-box; /* Include padding and border in total width and height */
 }
 
+.equal {
+    grid-column: span 2; /* Make the equal button span two columns */
+}
+
 /* Add this rule to prevent stretching */
 #keys > button {
     min-width: 0; /* Allow buttons to shrink equally if needed */
@@ -88,7 +92,7 @@ button:active {
 }
 
 .operator-btn:active {
-    background-color: hsl(199, 98%, 90%); /* Light blue on click */
+    background-color: hsl(197, 36%, 12%); /* Light blue on click */
 }
 
 /* Media query for smaller screens */
