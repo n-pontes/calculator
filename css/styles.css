@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f7f7f7; /* Light background for a modern look */
+    background-image: linear-gradient(to bottom, #30cfd0 0%, #330867 100%);
 }
 
 #calculator {
@@ -71,15 +71,15 @@ button:active {
 }
 
 .operator-btn {
-    background-color: #ff9800; /* Distinctive color for operators */
+    background-color: hsl(199, 98%, 48%); /* Distinctive color for operators */
 }
 
 .operator-btn:hover {
-    background-color: #ffb74d; /* Lighter orange on hover */
+    background-color: hsl(199, 98%, 68%); /* Lighter blue on hover */
 }
 
 .operator-btn:active {
-    background-color: #ffc107; /* Light orange on click */
+    background-color: hsl(199, 98%, 90%); /* Light blue on click */
 }
 
 /* Media query for smaller screens */
