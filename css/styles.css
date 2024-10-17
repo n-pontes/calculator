@@ -35,7 +35,7 @@ body {
 #display {
     width: calc(100% - 30px); /* Reduce width for margins */
     height: 150px;
-    font-size: 4.5rem;
+    font-size: 5.5rem;
     text-align: right;
     margin: 15px; /* Add margin for spacing */
     font-family: 'myCalculator';
