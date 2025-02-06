@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/c70b0dc5-2333-4b07-ac8b-9c89c62f3234)# Project: Calculator
+# Project: Calculator
 Implementation of a Calculator for The Odin Project curriculum.
 
 ## Stage with Added UI
