@@ -1,4 +1,4 @@
-# Project: Calculator
+![image](https://github.com/user-attachments/assets/c70b0dc5-2333-4b07-ac8b-9c89c62f3234)# Project: Calculator
 Implementation of a Calculator for The Odin Project curriculum.
 
 ## Stage with Added UI
@@ -27,4 +27,5 @@ This project involved building a functional calculator that performs basic arith
 + Clear button to reset the calculator.
 + User-friendly interface with a responsive layout.
 
-
+Live: https://n-pontes.github.io/calculator/
+![image](https://github.com/user-attachments/assets/edfdfa03-d2a5-4193-83c2-ba261c3a9c32)
